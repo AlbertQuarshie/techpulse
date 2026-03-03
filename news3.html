@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechPulse | Resident Evil Requiem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <header>
+      <nav
+        class="flex items-center justify-between flex-wrap bg-[#2C3531] py-4 lg:px-12 shadow border-solid border-t-2 border-blue-700"
+      >
+        <div
+          class="flex justify-between lg:w-auto w-full items-center pl-6 pr-6 lg:border-b-0 border-solid border-b-2 border-gray-700 pb-5 lg:pb-0"
+        >
+          <div class="flex items-center flex-shrink-0 mr-16">
+             <div class="flex items-center flex-shrink-0 mr-16 text-white text-2xl font-bold">
+        <a href="index.html">
+          <h1>Tech<span class="text-[#FFCB9B]">Pulse</span></h1>
+        </a>
+      </div>
+          <div class="block lg:hidden">
+            <input type="checkbox" id="nav-toggle-check" class="hidden peer" />
+            <label
+              for="nav-toggle-check"
+              class="flex items-center px-3 py-2 border-2 rounded text-[#FFCB9B] border-[#FFCB9B] hover:text-white hover:border-white cursor-pointer"
+            >
+              <svg
+                class="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </label>
+            <div
+              class="hidden peer-checked:block absolute left-0 top-24 w-full bg-[#2C3531] z-50 shadow-xl lg:hidden"
+            >
+              <div
+                class="flex flex-col items-center py-6 text-md font-bold text-[#FFCB9B] space-y-4"
+              >
+                <a href="about.html" class="hover:text-white">About Us</a>
+                <a href="careers.html" class="hover:text-white">Careers</a>
+                <a href="blog.html" class="hover:text-white">Blog</a>
+                <a href="faq.html" class="hover:text-white">FAQ</a>
+                <a href="contact.html" class="hover:text-white">Contact Us</a>
+                <div class="w-full border-t border-gray-700 my-2"></div>
+                <a href="signup.html" class="hover:text-white">Sign Up</a>
+                <a href="login.html" class="hover:text-white">Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="nav-menu"
+          class="hidden w-full lg:block flex-grow lg:flex lg:items-center lg:w-auto lg:px-3 px-8 text-center"
+        >
+          <div class="text-md font-bold text-[#FFCB9B] lg:flex-grow">
+            <a
+              href="about.html"
+              class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 lg:mr-4"
+              >About Us</a
+            >
+            <a
+              href="careers.html"
+              class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 lg:mr-4"
+              >Careers</a
+            >
+            <a
+              href="blog.html"
+              class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 lg:mr-4"
+              >Blog</a
+            >
+            <a
+              href="faq.html"
+              class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700 lg:mr-4"
+              >FAQ</a
+            >
+            <a
+              href="contact.html"
+              class="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-700"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            class="flex flex-col lg:flex-row items-center justify-center mt-4 lg:mt-0"
+          >
+            <a
+              href="signup.html"
+              class="block text-md px-4 py-2 rounded text-[#FFCB9B] font-bold hover:text-white hover:bg-blue-700"
+              >Sign Up</a
+            >
+            <a
+              href="login.html"
+              class="block text-md px-4 lg:ml-2 py-2 rounded text-[#FFCB9B] font-bold hover:text-white hover:bg-blue-700"
+              >Login</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow">
+      <section class="bg-white py-12 px-6 border-b border-gray-100">
+        <div class="max-w-screen-lg mx-auto text-center">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight"
+          >
+            Resident Evil Requiem's director on redefining the survival horror
+            genre
+            <span
+              class="block text-xl md:text-2xl text-blue-700 font-semibold mt-4"
+            >
+              Reporter: Allen Choo
+            </span>
+          </h1>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden bg-gray-50 py-16">
+        <div class="mx-auto max-w-screen-lg">
+          <div class="px-8 mb-12">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-gray-800 leading-snug"
+            >
+              Thirty years ago, a game named Resident Evil ushered in the
+              survival horror genre — a blend of nerve-shredding tension,
+              elaborate puzzles, and intricate inventory management.
+            </h2>
+          </div>
+
+          <div
+            class="grid w-full grid-cols-1 md:grid-cols-2 gap-12 items-start"
+          >
+            <div class="px-8">
+              <p class="text-gray-500 leading-relaxed mb-6">
+                The series became Japanese developer Capcom's best-selling
+                franchise ever, prompting books, films and TV programmes, as
+                well as more games. So how does the latest edition, Resident
+                Evil Requiem - released to excited fans worldwide on Friday -
+                keep the scares feeling surprising three decades on? Koshi
+                Nakanishi, who directed the new release, told the BBC the
+                balancing act between "familiarity and freshness" had been a
+                "huge challenge". But he added he hoped the new title managed to
+                "redefine survival horror in interesting new ways", while still
+                "respecting the DNA of the series". Over the years, the
+                franchise has see-sawed between focusing on terror and
+                high-octane action, with mixed results. 
+              </p>
+              
+            </div>
+
+            <div class="px-8">
+              <div
+                class="rounded-2xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.02]"
+              >
+                <img
+                  src="https://ichef.bbci.co.uk/news/800/cpsprodpb/017a/live/9f5c4cb0-1261-11f1-808c-3f897f9a068e.jpg.webp"
+                  alt="Brain Research"
+                  class="w-full h-auto object-cover"
+                />
+              </div>
+              <p class="text-xs text-gray-400 mt-2 italic">
+                The series latest protagonist Grace Ashcroft.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden bg-white py-16">
+        <div class="mx-auto max-w-screen-lg">
+          <div
+            class="grid w-full grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          >
+            <div class="px-8 md:order-last text-gray-500 leading-relaxed">
+              <p class="mb-6">
+                After hearing the latest
+                game would try to combine the two, some fans were left fearing
+                it would feel too "jarring". However, producer Masato Kumazawa
+                told the BBC the team has always been clear on Requiem's and
+                Resident Evil's signature mood - fear. "Fear is such a human
+                emotion," he said. "And through entertainment, we find ways to
+                use fear as a thrill, but in a positive way." "So I think that
+                even with 30 years on the game's legacy, people still want to go
+                through those thrills over and over again, because that's really
+                what makes us human."
+              </p>
+              
+            </div>
+            <div class="px-8 md:order-first">
+              <div
+                class="rounded-2xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.02]"
+              >
+                <img
+                  src="https://ichef.bbci.co.uk/news/800/cpsprodpb/da9e/live/c6d89bb0-1264-11f1-be69-a9733730848f.jpg.webp"
+                  alt="AI Communication"
+                  class="w-full h-auto object-cover"
+                />
+              </div>
+              <p class="text-xs text-gray-400 mt-2 italic">
+                The Return of Leon S Kennedy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#2C3531]">
+      <div class="max-w-screen-xl px-4 py-12 mx-auto text-center">
+        <nav
+          class="flex flex-wrap justify-center space-x-6 mb-8 text-[#FFCB9B]"
+        >
+          <a href="about.html" class="hover:text-white">About</a>
+          <a href="blog.html" class="hover:text-white">Blog</a>
+          <a href="careers.html" class="hover:text-white">Careers</a>
+          <a href="faq.html" class="hover:text-white">FAQ</a>
+          <a href="contact.html" class="hover:text-white">Contact Us</a>
+        </nav>
+        <p class="text-[#FFCB9B] text-sm">
+          © 2026 TechPulse, Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
